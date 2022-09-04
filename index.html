@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>Air jordan</title>
+  </head>
+  <body>
+
+    <!-- --------TOTAL------------- -->
+    <div class="total-container">
+      <h3>Total:$ </h3>
+      <h3 class="total">0</h3>
+    </div>
+    <!-- NAVBAR    -->
+    <nav>
+      <div class="navbar">
+        <div>
+          <a href="#" class="brand"> Nike </a>
+        </div>
+        <div class="preview">
+          <a href="#timing" class="preview-link"> Timmings </a>
+          <a href="#shopping" class="preview-link"> Shop </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION  -->
+    <div class="landing-container">
+      <div class="header-container">
+        <h1 class="slogan">
+          Any day is perfect day for shoe shopping
+          <p class="sub-slogan" style="margin-left: 0;">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum
+            reprehenderit saepe consequuntur dolores molestiae voluptate
+            temporibus eius deleniti adipisci, voluptas ad soluta dicta quo
+            doloribus. Similique voluptas ullam deserunt accusantium.
+          </p>
+        </h1>
+        <img src="./Images/background-image.png" class="shoe-img" alt="shoes" />
+      </div>
+    </div>
+    <hr>
+
+
+    <!-- TIMING SECTION  -->
+
+    <div class="timing-section" id="timing">
+      <h2 class="timing-heading">Store Timings</h2>
+      <div class="timing-grid">
+        <div class="grid-item">Sunday: 8am - 8pm</div>
+        <div class="grid-item">Monday: 6am - 6pm</div>
+        <div class="grid-item">Tuesday: 6am - 6pm</div>
+        <div class="grid-item">Wednesday: 6am - 6pm</div>
+        <div class="grid-item">Thursday: 6am - 10pm</div>
+        <div class="grid-item">Friday: 6am - 10pm</div>
+        <div class="grid-item">Saturday: 8am - 10pm</div>
+      </div>
+    </div>
+    <hr>
+
+    <!-- ------------SHOPPING---------- -->
+
+    <div class="shop-container" id="shopping">
+      <h2 class="timing-heading">Our Shoes</h2>
+      <div class="shoe-card-container">
+
+        <div class="card">
+          <img src="./Shoes/shoe1.jpg"  class="card-shoe-img"></img>
+          <p class="shoe-name">Jordan 1</p>
+          <div class="info-container">
+            <div class="btn-container">
+              <div class="less-btn" onclick="lessQty(event)">-</div>
+              <p id="Jordan-1" class="qty">0</p>
+              <div class="add-btn" onclick="addQty(event)" >+</div>
+            </div>
+            <p class="card-price">$100</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./Shoes/shoe2.jpg"  class="card-shoe-img"></img>
+          <p class="shoe-name">Jordan 2</p>
+          <div class="info-container">
+            <div class="btn-container">
+              <div class="less-btn" onclick="lessQty(event)">-</div>
+              <p id="Jordan-2" class="qty">0</p>
+              <div class="add-btn" onclick="addQty(event)" >+</div>
+            </div>
+            <p class="card-price">$150</p>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <img src="./Shoes/shoe3.jpg"  class="card-shoe-img"></img>
+          <p class="shoe-name">Jordan 3</p>
+          <div class="info-container">
+            <div class="btn-container">
+              <div class="less-btn" onclick="lessQty(event)">-</div>
+              <p id="Jordan-3" class="qty">0</p>
+              <div class="add-btn" onclick="addQty(event)" >+</div>
+            </div>
+            <p class="card-price">$200</p>
+          </div>
+        </div>
+
+
+
+        <div class="card">
+          <img src="./Shoes/shoe4.jpg"  class="card-shoe-img"></img>
+          <p class="shoe-name">Jordan 4</p>
+          <div class="info-container">
+            <div class="btn-container">
+              <div class="less-btn" onclick="lessQty(event)">-</div>
+              <p id="Jordan-4" class="qty">0</p>
+              <div class="add-btn" onclick="addQty(event)" >+</div>
+            </div>
+            <p class="card-price">$250</p>
+          </div>
+        </div>
+
+
+
+        <div class="card">
+          <img src="./Shoes/shoe5.jpg"  class="card-shoe-img"></img>
+          <p class="shoe-name">Jordan 5</p>
+          <div class="info-container">
+            <div class="btn-container">
+              <div class="less-btn" onclick="lessQty(event)" >-</div>
+              <p id="Jordan-5" class="qty">0</p>
+              <div class="add-btn" onclick="addQty(event)" >+</div>
+            </div>
+            <p class="card-price">$50</p>
+          </div>
+        </div>
+
+
+
+
+        <div class="card">
+          <img src="./Shoes/shoe6.jpg"  class="card-shoe-img"></img>
+          <p class="shoe-name">Jordan 6</p>
+          <div class="info-container">
+            <div class="btn-container">
+              <div class="less-btn" onclick="lessQty(event)" >-</div>
+              <p id="Jordan-6" class="qty">0</p>
+              <div class="add-btn" onclick="addQty(event)" >+</div>
+            </div>
+            <p class="card-price">$100</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER  -->
+    <footer>
+      Made by
+      <a href="https://github.com/rajat4984" target="_blank"> Rajat </a>
+    </footer>
+  </body>
+</html>
