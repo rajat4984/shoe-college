@@ -47,26 +47,38 @@ const lessQty = (e) => {
     e.target.parentNode.parentNode.previousElementSibling.textContent;
   if (shoe === "Jordan 1" && shoe1.textContent > 0) {
     shoe1.textContent = parseInt(--shoe1.textContent);
-    totalDiv.textContent = shoe1Price - parseInt(totalDiv.textContent);
+    totalDiv.textContent = Math.abs(
+      shoe1Price - parseInt(totalDiv.textContent)
+    );
   }
-  if (shoe === "Jordan 2" && shoe1.textContent > 0) {
+  if (shoe === "Jordan 2" && shoe2.textContent > 0) {
     shoe2.textContent = parseInt(--shoe2.textContent);
-    totalDiv.textContent = shoe2Price - parseInt(totalDiv.textContent);
+    totalDiv.textContent = Math.abs(
+      shoe2Price - parseInt(totalDiv.textContent)
+    );
   }
   if (shoe === "Jordan 3" && shoe3.textContent > 0) {
     shoe3.textContent = +parseInt(--shoe3.textContent);
-    totalDiv.textContent = shoe3Price - parseInt(totalDiv.textContent);
+    totalDiv.textContent = Math.abs(
+      shoe3Price - parseInt(totalDiv.textContent)
+    );
   }
   if (shoe === "Jordan 4" && shoe4.textContent > 0) {
     shoe4.textContent = parseInt(--shoe4.textContent);
-    totalDiv.textContent = shoe4Price - parseInt(totalDiv.textContent);
+    totalDiv.textContent = Math.abs(
+      shoe4Price - parseInt(totalDiv.textContent)
+    );
   }
   if (shoe === "Jordan 5" && shoe5.textContent > 0) {
     shoe5.textContent = parseInt(--shoe5.textContent);
-    totalDiv.textContent = shoe5Price - parseInt(totalDiv.textContent);
+    totalDiv.textContent = Math.abs(
+      shoe5Price - parseInt(totalDiv.textContent)
+    );
   }
   if (shoe === "Jordan 6" && shoe6.textContent > 0) {
     shoe6.textContent = parseInt(--shoe6.textContent);
-    totalDiv.textContent = shoe6Price - parseInt(totalDiv.textContent);
+    totalDiv.textContent = Math.abs(
+      shoe6Price - parseInt(totalDiv.textContent)
+    );
   }
 };
