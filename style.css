@@ -7,8 +7,8 @@
   box-sizing: border-box;
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -22,7 +22,6 @@ body {
   );
   background-repeat: no-repeat;
   margin: 0;
-
 }
 
 /* ---------------SCROLL-BAR-------------------- */
@@ -43,21 +42,21 @@ body {
 }
 
 /* ---------TOTAL----------- */
-.total-container{
-    background-color: white;
-    width: 140px;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    float: right;
-    position: sticky;
-    left: 0;
-    top: 90%;
-    border: 1px solid black;
-    border-radius: 50px 0px 0px 50px;
-    z-index: 2;
-    margin: 0;
+.total-container {
+  background-color: white;
+  width: 140px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  position: sticky;
+  left: 0;
+  top: 90%;
+  border: 1px solid black;
+  border-radius: 50px 0px 0px 50px;
+  z-index: 2;
+  margin: 0;
 }
 
 /* ------------NAVBAR-------------- */
@@ -77,7 +76,6 @@ body {
   padding: 0.2em;
   cursor: pointer;
   border-radius: 5px;
-
 }
 
 .preview-link {
@@ -182,7 +180,7 @@ footer {
 
 .shoe-card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 330px));
   justify-content: space-evenly;
   margin: 4% 0;
   color: black;
@@ -241,6 +239,89 @@ p {
 
 .card-price {
   font-size: 1.1rem;
+}
+
+/* ------------------------------------CONTACT CONTAINER-------------------------------------- */
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+  color: white;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-item {
+  padding: 0.5em;
+}
+
+.form-label {
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
+.form-input {
+  font-size: 1rem;
+  outline: none;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+}
+
+.submit-btn {
+  font-size: 1rem;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid white;
+  font-weight: bolder;
+  background-color: transparent;
+  color: white;
+}
+
+.submit-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.form-label,
+.form-input {
+  margin-bottom: 2em;
+}
+
+.menu {
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.664);
+  width: 60%;
+  max-width: 80%;
+  padding: 5em;
+}
+
+.menu-heading {
+  margin-bottom: 1em;
+  font-size: 2.5rem;
+  border-bottom: 1px solid white;
+  padding-bottom: 1em;
+}
+
+.menu-grid {
+  font-size: 1.3rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+}
+
+.menu-item {
+  padding-bottom: 1em;
+}
+
+.menu-item:nth-child(3n + 1) {
+  grid-column: 1 / span 3;
 }
 
 /* ------------------------MEDIA QUIRIES--------------------- */
@@ -340,5 +421,29 @@ p {
   }
   .timing-grid {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .menu {
+    width: 80%;
+    padding: 3em;
+  }
+  .menu-item {
+    font-size: 1rem;
+  }
+  .menu-item:nth-child(3n + 1) {
+    font-size: 1.1rem;
+    grid-column: 1 / span 3;
+    width: 50%;
+  }
+
+  .contact-item:nth-child(even) > input {
+    width: 110%;
+  }
+  .form-input {
+    height: 30px;
+  }
+
+  .form-label {
+    font-size: 1rem;
   }
 }
