@@ -45,18 +45,15 @@ body {
 .total-container {
   background-color: white;
   width: 140px;
-  height: 70px;
+  height: 55px;
   display: flex;
   align-items: center;
   justify-content: center;
   float: right;
   position: sticky;
-  left: 0;
-  top: 90%;
+  top: 85%;
   border: 1px solid black;
   border-radius: 50px 0px 0px 50px;
-  z-index: 2;
-  margin: 0;
 }
 
 /* ------------NAVBAR-------------- */
@@ -324,6 +321,80 @@ p {
   grid-column: 1 / span 3;
 }
 
+/* ----------------UPCOMING-SHOES------------------------ */
+
+.upcoming-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5em 2em 0em 2em;
+}
+
+.slide > img {
+  width: 340px;
+}
+
+.slider {
+  height: 450px;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  width: 340px;
+  height: 300px;
+  background-color: white;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  transition: 1s;
+}
+
+.navigation-manual {
+  position: absolute;
+  width: 350px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid black;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 20px;
+}
+
+.manual-btn:hover {
+  background: black;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -100%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -200%;
+}
+
+#radio4:checked ~ .first {
+  margin-left: -300%;
+}
+
 /* ------------------------MEDIA QUIRIES--------------------- */
 
 @media only screen and (max-width: 600px) {
@@ -331,13 +402,17 @@ p {
     font-size: 0.8rem;
   }
 
+  .total-container {
+    width: 100px;
+    height: 50px;
+  }
+
   .navbar {
     padding: 4%;
   }
 
   /* -------------Landing-header--------------- */
-  .landing-container,
-  .bottom-container {
+  .landing-container {
     padding: 7% 6%;
     line-height: 1.3;
   }
@@ -397,6 +472,30 @@ p {
 
   .card-price {
     font-size: 1.2rem;
+  }
+
+  /* --------------UPCOMING-SLIDER--------- */
+
+  .slide > img {
+    width: 300px;
+  }
+
+  .slider {
+    height: 400px;
+  }
+
+  .slides {
+    width: 300px;
+    height: 250px;
+  }
+
+  .navigation-manual {
+    width: 310px;
+    margin-top: 20px;
+  }
+
+  .manual-btn:not(:last-child) {
+    margin-right: 15px;
   }
 
   /* ----------------FOOTER---------------- */

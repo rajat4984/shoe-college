@@ -5,6 +5,8 @@ let shoe4 = document.querySelector("#Jordan-4");
 let shoe5 = document.querySelector("#Jordan-5");
 let shoe6 = document.querySelector("#Jordan-6");
 let totalDiv = document.querySelector(".total");
+let counter = 1;
+
 
 const shoe1Price = 100;
 const shoe2Price = 150;
@@ -82,3 +84,6 @@ const lessQty = (e) => {
     );
   }
 };
+
+
+
